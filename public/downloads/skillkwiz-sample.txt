@@ -1,0 +1,3 @@
+SkillKwiz sample download
+
+This is a dummy file for testing download links.
