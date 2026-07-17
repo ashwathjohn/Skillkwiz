@@ -92,3 +92,40 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+@keyframes floating {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate3d(0, -8px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -16px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -8px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.float1 {
+  animation: floating 4s ease-in-out infinite;
+}
+
+.float2 {
+  animation: floating 5s ease-in-out infinite;
+  animation-delay: .4s;
+}
+
+.float3 {
+  animation: floating 6s ease-in-out infinite;
+  animation-delay: .8s;
+}

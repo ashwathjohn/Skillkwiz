@@ -211,8 +211,8 @@ export default function AboutPage() {
             <video
               className="w-full h-auto rounded-lg"
               controls
-              preload="none"
-              poster="/images/aboutpage/about_video.png"
+              preload="metadata"
+              poster="/images/aboutpage/Screenshot 2026-07-17 171044.png"
             >
               <source
                 src="/images/aboutpage/about_video.mp4"

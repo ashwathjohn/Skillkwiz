@@ -1,4 +1,7 @@
+
 import Link from "next/link";
+
+
 
 export default function WhyChooseSection() {
   return (
@@ -28,12 +31,10 @@ export default function WhyChooseSection() {
 
             {/* Globe animation on bottom background */}
             <div className="absolute inset-0 flex justify-center items-center opacity-60">
-              <img
-                src="/images/homepage/home_globe.gif"
-                alt=""
-                className="w-full max-w-2xl"
-                aria-hidden="true"
-              />
+            <img
+    src="/images/homepage/home_globe.gif"
+    className="w-full max-w-2xl animate-pulse"
+/>
             </div>
           </div>
         </div>
@@ -58,15 +59,21 @@ export default function WhyChooseSection() {
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-16 relative h-[450px] md:h-[400px]">
           {/* Skill Library Card - Tilted Left */}
           <div
-            className="bg-white rounded-lg p-6 text-black max-w-xs w-full md:w-64 md:h-[350px] transform md:absolute md:left-[calc(50%-280px)] md:top-4 hover:-translate-y-2 transition-transform duration-300 shadow-lg z-10"
-            style={{ transform: "rotate(-25deg)" }}
+            className="bg-white rounded-lg p-6 text-black
+max-w-xs w-full md:w-64 md:h-[350px]
+md:absolute md:left-[calc(50%-280px)] md:top-4
+-rotate-[25deg]
+hover:-translate-y-4
+hover:-rotate-[20deg]
+transition-all duration-500 ease-out
+shadow-lg z-10 float1 "
           >
             <div className="flex justify-center mb-4">
               <div className="w-16 h-16 bg-[#c3dfff] rounded-full flex items-center justify-center overflow-hidden">
                 <img
                   src="/images/homepage/books.gif"
                   alt=""
-                  className="w-20 h-20 object-cover"
+                  className="w-20 h-20 object-cover animate-pulse"
                   aria-hidden="true"
                 />
               </div>
@@ -82,7 +89,14 @@ export default function WhyChooseSection() {
           </div>
 
           {/* Secure Testing Card - Center */}
-          <div className="bg-white rounded-lg p-6 text-black max-w-xs w-full md:w-64 md:h-[350px] transform md:z-20 hover:-translate-y-2 transition-transform duration-300 shadow-lg md:absolute md:left-[calc(50%-130px)]">
+          <div className="bg-white rounded-lg p-6 text-black
+max-w-xs w-full md:w-64 md:h-[350px]
+md:absolute md:left-[calc(50%-130px)]
+z-20
+hover:-translate-y-5
+hover:scale-105
+transition-all duration-500 ease-out
+shadow-xl group float2">
             <div className="flex justify-center mb-4">
               <div className="w-16 h-16 bg-[#c3dfff] rounded-full flex items-center justify-center overflow-hidden">
                 <img
@@ -107,8 +121,15 @@ export default function WhyChooseSection() {
 
           {/* Flexible Pricing Card - Tilted Right */}
           <div
-            className="bg-white rounded-lg p-6 text-black max-w-xs w-full md:w-64 md:h-[350px] transform md:absolute md:right-[calc(50%-280px)] md:top-4 hover:-translate-y-2 transition-transform duration-300 shadow-lg z-10"
-            style={{ transform: "rotate(25deg)" }}
+            className="bg-white rounded-lg p-6 text-black
+max-w-xs w-full md:w-64 md:h-[350px]
+md:absolute md:right-[calc(50%-280px)] md:top-4
+rotate-[25deg]
+hover:-translate-y-4
+hover:rotate-[20deg]
+transition-all duration-500 ease-out
+shadow-lg z-10 group float3"
+            
           >
             <div className="flex justify-center mb-4">
               <div className="w-16 h-16 bg-[#c3dfff] rounded-full flex items-center justify-center overflow-hidden">
